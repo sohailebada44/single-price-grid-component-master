@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Fraunces:opsz,wght@9..144,500&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Open+Sans&family=Outfit:wght@300;400;600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body {
+    background-color: var(--Light-Gray);
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    max-width: 760px;
+}
+/* box one  */
+.box-one {
+    background-color: white;
+    grid-column: span 2;
+    padding: 2.5rem;
+}
+.box-one h2 {
+    color: var(--Cyan);
+    padding-bottom: 1.5rem;
+}
+.box-one h3 {
+    color: var(--Bright-Yellow);
+    padding-bottom: 1rem;
+}
+.box-one p {
+    color: var(--Grayish-Blue);
+    line-height: 1.6;
+    margin-right: 9rem;
+}
+/* box two   */
+.box-two {
+    background-color: var(--Cyan);
+    padding: 2rem;
+    color: var(--Light-Gray);
+}
+.box-two h3 {
+    padding-bottom: 1rem;
+}
+.box-two h1 {
+    padding-bottom: 0.3rem;
+}
+.box-two h1 span {
+    font-size: 16px;
+    padding-left: 0.5rem;
+    color: var(--Grayish-Blue);
+}
+.box-two p {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+button {
+    font-size: 16px;
+    border: none;
+    padding: 1.3rem;
+    background-color: var(--Bright-Yellow);
+    border-radius: 0.5rem;
+    color: var(--Light-Gray);
+    width: 100%;
+}
+/* box three  */
+.box-three {
+    background-color: var(--Cyan);
+    opacity: 0.8;   
+    color: var(--Light-Gray);
+    padding: 2rem;
+}
+.box-three h3 {
+    padding-bottom: 1rem;
+}
+.box-three h3 {
+    font-weight: 700;
+}
+.box-three p {
+    width: 220px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+@media (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .box-one p {
+        margin-right: 30px;
+    }
+}
