@@ -26,12 +26,15 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     max-width: 760px;
+    box-shadow: 0 18px 51px var(--Grayish-Blue);
 }
 /* box one  */
+.box-one, .box-two, .box-three {
+    padding: 2.5rem;
+}
 .box-one {
     background-color: white;
     grid-column: span 2;
-    padding: 2.5rem;
 }
 .box-one h2 {
     color: var(--Cyan);
@@ -49,7 +52,6 @@ main {
 /* box two   */
 .box-two {
     background-color: var(--Cyan);
-    padding: 2rem;
     color: var(--Light-Gray);
 }
 .box-two h3 {
@@ -65,7 +67,7 @@ main {
 }
 .box-two p {
     padding-top: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.3rem;
 }
 button {
     font-size: 16px;
@@ -81,24 +83,22 @@ button {
     background-color: var(--Cyan);
     opacity: 0.8;   
     color: var(--Light-Gray);
-    padding: 2rem;
 }
 .box-three h3 {
     padding-bottom: 1rem;
 }
-.box-three h3 {
-    font-weight: 700;
-}
 .box-three p {
-    width: 220px;
+    margin-right: 5rem;
     line-height: 1.7;
     font-size: 16px;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     main {
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
+        border-radius: 5.5rem;
+        overflow: hidden;
     }
     .box-one p {
         margin-right: 30px;
